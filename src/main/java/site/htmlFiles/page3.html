@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <style>
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+<body>
+<div>
+
+    <center><h1> This is page 3! </h1></center>
+</div>
+<div>
+    <h2>Choose what you want to do : </h2>
+
+    <a href="index.html">
+        <button class="button" style="vertical-align:middle"><span>Go to main page </span></button>
+    </a>
+    <a href="page1.html">
+        <button class="button" style="vertical-align:middle"><span>Go to page 1 </span></button>
+    </a>
+    <a href="page2.html">
+        <button class="button" style="vertical-align:middle"><span>Go to page 2 </span></button>
+    </a>
+
+    <a href="page4.html">
+        <button class="button" style="vertical-align:middle"><span>Go to page 4 </span></button>
+    </a>
+
+    <a href="page5.html">
+        <button class="button" style="vertical-align:middle"><span>Go to page 5 </span></button>
+    </a>
+
+</div>
+</body>
+</html>
